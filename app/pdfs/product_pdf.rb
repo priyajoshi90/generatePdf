@@ -13,7 +13,7 @@ class ProductPdf < Prawn::Document
 
 	def product_name
 		move_down 20
-		image open("#{@product.photo.url}")
+		#image open("#{@product.photo.url}")
 		#text "#{@product.photo.url}"
 		#image product.photo.url
 		#Rails.root + @product.photo.url
@@ -26,9 +26,4 @@ class ProductPdf < Prawn::Document
 			[[@product.name, @product.qty, @product.price, @product.photo.url]]
 	end
 
-	def show_sample
-		id_sample = Rails.root + @pi.picture.url(:large)
-		image id_sample, at: [0,900], height: 161, width: 250
-		move_down 20
-	end
 end
