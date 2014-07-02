@@ -13,10 +13,6 @@ class ProductPdf < Prawn::Document
 
 	def product_name
 		move_down 20
-		#image open("#{@product.photo.url}")
-		#text "#{@product.photo.url}"
-		#image product.photo.url
-		#Rails.root + @product.photo.url
 		table product_name_rows
 	end
 
