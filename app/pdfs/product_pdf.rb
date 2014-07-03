@@ -7,7 +7,7 @@ class ProductPdf < Prawn::Document
 	end
 
 	def product_id
-		text "Product\##{@product.id}", size:20, style: :bold
+		text "Product\##{@product.id}"
 
 	end
 
