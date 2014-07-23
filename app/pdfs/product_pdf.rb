@@ -20,7 +20,7 @@ class ProductPdf < Prawn::Document
 	def product_name_rows
 
 		[["Product","Qty","Price"]] + 
-			[[@product.name, @product.qty]]
+			[[@product.name, @product.qty, @product.price]]
 	end
 
 end

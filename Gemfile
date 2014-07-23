@@ -31,7 +31,13 @@ gem 'prawn'
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
+gem 'sunspot_rails'
+
 gem 'high_voltage'
+
+group :development do
+	gem 'sunspot_solr'
+end
 
 group :development, :test do
   gem 'sqlite3'
